@@ -1,0 +1,8 @@
+Between Experimental Conditions 
+t_value_sc_0_vs_1=-1.807536416014402
+p_value_sc_0_vs_1=0.07767753275801458
+
+Between beginning and End of events 
+t_value_begin_end=-3.3031876743163564
+p_value_begin_end=0.001904874210824922
+

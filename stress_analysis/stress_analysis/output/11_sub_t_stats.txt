@@ -1,0 +1,8 @@
+Between Experimental Conditions 
+t_value_sc_0_vs_1=nan
+p_value_sc_0_vs_1=nan
+
+Between beginning and End of events 
+t_value_begin_end=-0.3705865010854847
+p_value_begin_end=0.71203358798989
+
