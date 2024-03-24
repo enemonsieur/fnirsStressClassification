@@ -1,17 +1,17 @@
 # fNIRS Data Analysis for Stress Prediction
 
 ## Overview
-This repository hosts `stress_prediction_subs_adapted_ePu.py`, a Python script for processing and analyzing functional Near-Infrared Spectroscopy (fNIRS) data to predict stress levels. The analysis assesses heart rate variability (HRV) and prefrontal cortex activity, targeting stress level differentiation in power grid system tasks.
+This repository hosts `stress_prediction_subs.py`, a Python script for processing and analyzing functional Near-Infrared Spectroscopy (fNIRS) data to predict stress levels. The analysis assesses heart rate variability (HRV) and prefrontal cortex activity, targeting stress level differentiation in power grid system tasks.
 
 ### Data Reading and Preprocessing
 - **Acquisition:** Utilizes `fNIRSreadParams` from the `proc` module to ingest data from the specified path.
-- **Filtering:** `FilterParams` in the `proc` module isolates frequencies related to heart rate signals, critical for further analysis.
+- **Filtering:** `FilterParams` in the `proc` module removes unwanted frequencies.
 
 ### Peak Detection
-- Implements AMPD, M2D, and S1 functions for identifying heartbeats in time series data, essential for HRV calculations.
+- Implements AMPD, M2D, and S1 functions for identifying heartbeats in time series data.
 
 ### Interbeat Interval (IBI) Calculation
-- Calculates IBIs to assess heart rate variability, focusing on the average IBI across epochs to identify temporal variations.
+- Calculates IBIs to assess heart rate variability, focusing on the average IBI across epochs to identify temporal variations, adds it into the feature matrix
 
 ### Statistical Analysis and Feature Reduction
 - Conducts t-tests and Cohen's d-tests to narrow down the feature set, highlighting significant stress indicators.
